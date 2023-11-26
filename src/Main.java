@@ -40,12 +40,8 @@ public class Main {
         int arrayLength = 19;
         //declare int-type var with name "arrayLength" and its property
 
-        String stringAsArray = "The quick brown fox jumps over a lazy dog.";
-        System.out.println(stringAsArray);
-        for (int c = 0; c < stringAsArray.length(); c++) {
-            System.out.print(stringAsArray.charAt(c));
-        }
-        System.out.println("=== BUBBLE SORTING ===");
+
+        System.out.println("---=== BUBBLE SORTING ===---");
 
 
     char[] arrayToSort; //declare char-type array "Array to sort"
@@ -57,7 +53,7 @@ public class Main {
     printArray(arrayToSort);
 
     for (int c = 1; c < arrayToSort.length; c++) { //implements outer loop, where the iterations qty is 1 less than array's length
-        for (int d = 0; d < c; d++) { //implements inner loop for compare pair of variables "c" and "d"
+        for (int d = 0; d < c; d++) { //implements inner loop for compare a pair of variables "c" and "d"
             if (arrayToSort[c] > arrayToSort[d]) { //implements condition -> when the element with index "c" greater than "d"
                 var tmp = arrayToSort[c]; //implements 3-rd temporary var "tmp", for  element index "c" put inside
                 arrayToSort[c] = arrayToSort[d]; //then element with index "c" get value of element with index "d"
