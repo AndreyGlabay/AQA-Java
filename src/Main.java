@@ -1,19 +1,15 @@
-import java.util.Random;
-//Random successfully been implemented by the system (see Line 10)
+import java.util.Random;        //Random successfully been implemented by the system (see Line 10)
 
-public class Main {
-    //creating class Main
+public class Main {             //creating class Main
 
-    static char minValue = 990;
-    //set static var "minValue", declare MIN random value
+    static char minValue = 990; //set static var "minValue", declare MIN random value
 
-    static char maxValue = 1510;
-    //set static var "maxValue", declare MAX random value
+    static char maxValue = 1510; //set static var "maxValue", declare MAX random value
 
     static Random rand = new Random();
-    //set static object type "Random" with name "rand" -> using by the SYSTEM for generating random values;
+    //set static object Random-type with name "rand" -> using by the SYSTEM for generating random values;
     // operator "new" -> possibility to create new objects;
-    //if all OK ->  Random is implementing by the system (see Line 1);
+    //Random is implementing by the system (see Line 1) automatically;
 
     static char getRandomValue() {
         //implement object "getRandomValue" which calculates a some value as follows
@@ -22,8 +18,7 @@ public class Main {
         //return random value calculating according to the formula and converting it to "char" type
     }
 
-    static void printArray(char[] aaa) {
-        //method "printArray" receive the char-type array to the input, with "aaa" var name
+    static void printArray(char[] aaa) { //method "printArray" receive the char-type array to the input, with "aaa" var name
         int n = 0;  //since we use "do while" loop there is necessity to implement an iterator - var "n"
         do {        // execute the code followed below in { } while ....
             System.out.println(n + " :: " + aaa[n]); //output using new line iterator value and var "aaa"
@@ -32,37 +27,31 @@ public class Main {
 
     }
 
+    public static void main(String[] args) { // start of main method == "entry point" == take for input array of strings, named "args"
+        String lineSeparator = System.lineSeparator(); //declare string-type var "lineSeparator" - system returns line-separator
+        int arrayLength = 19; //declare int-type var with name "arrayLength" and its property
 
-    public static void main(String[] args) {
-        // start of main method == "entry point" == take for input array of strings, named "args"
-        String lineSeparator = System.lineSeparator();
-        //declare string-type var "lineSeparator" - system returns line-separator
-        int arrayLength = 19;
-        //declare int-type var with name "arrayLength" and its property
+        System.out.println("---=== BUBBLE SORTING ===---"); //Print the Title declared in the quotes
 
-
-        System.out.println("---=== BUBBLE SORTING ===---");
-
-
-    char[] arrayToSort; //declare char-type array "Array to sort"
-    arrayToSort = new char[arrayLength]; //create memory for the array
-    for (int c =0; c < arrayLength; c++) { //initialises the array
-        arrayToSort[c] = getRandomValue(); //put some value to the array
-    }
-    System.out.println("=== ARRAY BEFORE SORTING ===");
-    printArray(arrayToSort);
-
-    for (int c = 1; c < arrayToSort.length; c++) { //implements outer loop, where the iterations qty is 1 less than array's length
-        for (int d = 0; d < c; d++) { //implements inner loop for compare a pair of variables "c" and "d"
-            if (arrayToSort[c] > arrayToSort[d]) { //implements condition -> when the element with index "c" greater than "d"
-                var tmp = arrayToSort[c]; //implements 3-rd temporary var "tmp", for  element index "c" put inside
-                arrayToSort[c] = arrayToSort[d]; //then element with index "c" get value of element with index "d"
-                arrayToSort[d] = tmp; //and then element with index "d" get the value from temporary var, which was originally the value of "c"
-            } //Sorting completed
+        char[] arrayToSort; //declare char-type array "Array to sort"
+        arrayToSort = new char[arrayLength]; //create memory for the array
+        for (int c =0; c < arrayLength; c++) { //initialises the array
+            arrayToSort[c] = getRandomValue(); //put some value to the array
         }
-    }
-    System.out.println("=== ARRAY AFTER SORTING ===");
-    printArray(arrayToSort);
+        System.out.println("=== ARRAY BEFORE SORTING ==="); //Print the Title declared in the quotes
+        printArray(arrayToSort); //Print the current sorted Array
+
+        for (int c = 1; c < arrayToSort.length; c++) { //implements outer loop, where the iterations qty is 1 less than array's length
+            for (int d = 0; d < c; d++) { //implements inner loop for compare a pair of variables "c" and "d"
+                if (arrayToSort[c] > arrayToSort[d]) { //implements condition -> when the element with index "c" greater than "d"
+                    var tmp = arrayToSort[c]; //implements 3-rd temporary var "tmp", for  element index "c" put inside
+                    arrayToSort[c] = arrayToSort[d]; //then element with index "c" get value of element with index "d"
+                    arrayToSort[d] = tmp; //and then element with index "d" get the value from temporary var, which was originally the value of "c"
+                } //Sorting completed
+            }
+        }
+        System.out.println("=== ARRAY AFTER SORTING ==="); //Print the Title declared in the quotes
+        printArray(arrayToSort); //Print the current sorted Array
 
     }
 }
