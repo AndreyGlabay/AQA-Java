@@ -41,8 +41,8 @@ public class Main {             //creating class Main
         System.out.println("=== ARRAY BEFORE SORTING ==="); //Print the Title declared in the quotes
         printArray(arrayToSort); //Print the current sorted Array
 
-        for (int c = 1; c < arrayToSort.length; c++) { //implements outer loop, where the iterations qty is 1 less than array's length
-            for (int d = 0; d < c; d++) { //implements inner loop for compare a pair of variables "c" and "d"
+        for (int c = 1; c < arrayToSort.length; c++) { // outer loop, passing whole array, the iterations qty is 1 less than array's length
+            for (int d = 0; d < c; d++) { // inner loop, passing not-sorting part of array, compare a pair of variables "c" and "d"
                 if (arrayToSort[c] > arrayToSort[d]) { //implements condition -> when the element with index "c" greater than "d"
                     var tmp = arrayToSort[c]; //implements 3-rd temporary var "tmp", for  element index "c" put inside
                     arrayToSort[c] = arrayToSort[d]; //then element with index "c" get value of element with index "d"
