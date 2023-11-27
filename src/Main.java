@@ -14,8 +14,18 @@ public class Main {             //creating class Main
     static char getRandomValue() {
         //implement object "getRandomValue" which calculates a some value as follows
         //calculating new value each run
+
+
+        // ==== FIRST WAY ==== //
         return (char) (minValue + rand.nextInt(maxValue - minValue));
         //return random value calculating according to the formula and converting it to "char" type
+
+
+        // ==== SECOND WAY ==== //
+//        int v = rand.nextInt(maxValue - minValue);
+//        char value = (char) (v % Character.MAX_VALUE);
+//        return value;
+
     }
 
     static void printArray(char[] aaa) { //method "printArray" receive the char-type array to the input, with "aaa" var name
