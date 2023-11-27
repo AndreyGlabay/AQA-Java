@@ -22,8 +22,8 @@ public class Main {             //creating class Main
 
 
         // ==== SECOND WAY ==== //
-//        int v = rand.nextInt(maxValue - minValue);
-//        char value = (char) (v % Character.MAX_VALUE);
+//        int a = rand.nextInt(maxValue -minValue);
+//        char value = (char) (a % Character.MAX_VALUE);
 //        return value;
 
     }
