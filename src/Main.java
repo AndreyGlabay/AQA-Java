@@ -35,8 +35,8 @@ public class Main {             //creating class Main
 
         char[] arrayToSort; //declare char-type array "Array to sort"
         arrayToSort = new char[arrayLength]; //create memory for the array
-        for (int c =0; c < arrayLength; c++) { //initialises the array
-            arrayToSort[c] = getRandomValue(); //put some value to the array
+        for (int a =0; a < arrayLength; a++) { //initialises the array
+            arrayToSort[a] = getRandomValue(); //put some value to the array
         }
         System.out.println("=== ARRAY BEFORE SORTING ==="); //Print the Title declared in the quotes
         printArray(arrayToSort); //Print the current sorted Array
