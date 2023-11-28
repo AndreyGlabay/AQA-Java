@@ -15,17 +15,14 @@ public class Main {             //creating class Main
         //implement object "getRandomValue" which calculates a some value as follows
         //calculating new value each run
 
-
         // ==== FIRST WAY ==== //
         return (char) (minValue + rand.nextInt(maxValue - minValue));
         //return random value calculating according to the formula and converting it to "char" type
-
 
         // ==== SECOND WAY ==== //
 //        int a = rand.nextInt(maxValue -minValue);
 //        char value = (char) (a % Character.MAX_VALUE);
 //        return value;
-
     }
 
     static void printArray(char[] mySymbol) { //method "printArray" receive the char-type array to the input, with "mySymbol" var name
@@ -34,7 +31,6 @@ public class Main {             //creating class Main
             System.out.println(n + " :: " + mySymbol[n] + " :: " + Integer.valueOf(mySymbol[n])); //output using new line iterator value and var "mySymbol" and value of var "mySymbol"
             n++;    //iterator "n" should be incremented
         } while (n < mySymbol.length); // ....while iterator "n" < length of var "mySymbol"
-
     }
 
     public static void main(String[] args) { // start of main method == "entry point" == take for input array of strings, named "args"
@@ -62,6 +58,5 @@ public class Main {             //creating class Main
         }
         System.out.println("=== ARRAY AFTER SORTING ==="); //Print the Title declared in the quotes
         printArray(arrayToSort); //Print the current sorted Array
-
     }
 }
