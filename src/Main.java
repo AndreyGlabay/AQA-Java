@@ -1,4 +1,4 @@
-import java.util.Random;        //Random successfully been implemented by the system (see Line 10)
+import java.util.Random; //Random successfully been implemented by the system (see Line 10) (**** SEE THE TASK AT THE END****)
 
 public class Main {             //creating class Main
 
@@ -61,3 +61,14 @@ public class Main {             //creating class Main
         printArray(arrayToSort); //Print the current sorted Array
     }
 }
+//========== THE TASK =============
+// Create an Array and sort it with Bubble Sort method
+// Array type: char
+// Array size: 19
+// Min value: 990
+// Max value: 1510
+// Loop type: do while
+// Sort-order: Desc
+// Use Random for choose values from the range MIN-MAX
+// Printout should not be at the task's body< but should be made by separate method;
+//======== END OF THE TASK =========
