@@ -31,7 +31,7 @@ public class Main {             //creating class Main
     static void printArray(char[] mySymbol) { //method "printArray" receive the char-type array to the input, with "mySymbol" var name
         int n = 0;  //since we use "do while" loop there is necessity to implement an iterator - var "n"
         do {        // execute the code followed below in { } while ....
-            System.out.println(n + " :: " + mySymbol[n]); //output using new line iterator value and var "mySymbol"
+            System.out.println(n + " :: " + mySymbol[n] + " :: " + Integer.valueOf(mySymbol[n])); //output using new line iterator value and var "mySymbol" and value of var "mySymbol"
             n++;    //iterator "n" should be incremented
         } while (n < mySymbol.length); // ....while iterator "n" < length of var "mySymbol"
 
