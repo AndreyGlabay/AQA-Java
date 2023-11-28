@@ -6,6 +6,8 @@ public class Main {             //creating class Main
 
     static char maxValue = 1510; //set static var "maxValue", declare MAX random value
 
+    static int arrayLength = 19; //declare int-type var with name "arrayLength" and its property
+
     static Random rand = new Random();
     //set static object Random-type with name "rand" -> using by the SYSTEM for generating random values;
     // operator "new" -> possibility to create new objects;
@@ -35,7 +37,6 @@ public class Main {             //creating class Main
 
     public static void main(String[] args) { // start of main method == "entry point" == take for input array of strings, named "args"
         String lineSeparator = System.lineSeparator(); //declare string-type var "lineSeparator" - system returns line-separator
-        int arrayLength = 19; //declare int-type var with name "arrayLength" and its property
 
         System.out.println("---=== BUBBLE SORTING ===---"); //Print the Title declared in the quotes
 
